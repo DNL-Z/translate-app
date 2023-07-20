@@ -1,7 +1,6 @@
 import React from 'react'
-
-import Link from 'next/link'
 import styled from '@emotion/styled'
+import Link from 'next/link'
 
 interface Props {
   title: string
@@ -13,8 +12,8 @@ export default function Card(props: Props) {
 
   return (
     <MagicButton>
-      <Link href={`/${title.replace(/\s/g, '_').toLowerCase()}`}>
-        <Content id={id}>{title}</Content>
+      <Link href={`/${id}`}>
+        <Content>{title}</Content>
       </Link>
     </MagicButton>
   )
