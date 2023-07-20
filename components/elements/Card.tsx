@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from '@emotion/styled'
 import Link from 'next/link'
 
@@ -11,17 +10,13 @@ export default function Card(props: Props) {
   const { title, id } = props
 
   return (
-    <MagicButton>
-      <Link href={`/${id}`}>
-        <Content>{title}</Content>
-      </Link>
-    </MagicButton>
+    <Link href={`/${id}`}>
+      <Content>{title}</Content>
+    </Link>
   )
 }
 
 // CSS
-const MagicButton = styled.div``
-
 const Content = styled.button`
   width: 100%;
   font-size: 2rem;
@@ -37,6 +32,7 @@ const Content = styled.button`
   transition-duration: 0.3s;
 
   &:hover {
+    cursor: pointer;
     background: linear-gradient(0deg, darkred, black);
     box-shadow: 0 0 50px darkred;
     transition-duration: 0.3s;

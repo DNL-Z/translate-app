@@ -4,16 +4,15 @@ import styled from '@emotion/styled'
 export default function BackButton() {
   return (
     <>
-      <Button>
-        <Link href="/">Back home</Link>
-      </Button>
+      <Link href={'/'}>
+        <Content>Back home</Content>
+      </Link>
     </>
   )
 }
 
 // CSS
-const Button = styled.div`
-  width: 15%;
+const Content = styled.div`
   background: red;
   border-radius: 3rem;
   padding: 1rem;
