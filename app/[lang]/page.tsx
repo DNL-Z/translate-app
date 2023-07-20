@@ -1,13 +1,18 @@
 'use client'
 
 import BackButton from '@/components/elements/BackButton'
+import useTranslation from 'next-translate/useTranslation'
+
 import styled from '@emotion/styled'
 
-export default function English() {
+export default function Language() {
+  const { t, lang } = useTranslation()
+
   return (
     <>
       <BackButton />
-      <PageContainer>English</PageContainer>
+      <PageContainer>{t('home:title')}</PageContainer>
+      <PageContainer>{t('home:description')}</PageContainer>
     </>
   )
 }
