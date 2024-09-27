@@ -9,7 +9,7 @@
     "*": [
       "common"
     ],
-    "/[lang]": [
+    "/article/[lang]": [
       "home"
     ],
     "/[lang]/second-page": [

@@ -10,7 +10,7 @@ export default function Card(props: Props) {
   const { title, id } = props
 
   return (
-    <Link href={`/${id}`}>
+    <Link href={`/article/${id}`}>
       <Content>{title}</Content>
     </Link>
   )
