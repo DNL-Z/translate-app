@@ -6,7 +6,7 @@ import useTranslation from 'next-translate/useTranslation'
 import styled from '@emotion/styled'
 
 export default function Language() {
-  const { t, lang } = useTranslation()
+  const { t } = useTranslation()
 
   return (
     <>
