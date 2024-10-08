@@ -11,9 +11,6 @@
     ],
     "/article/[lang]": [
       "home"
-    ],
-    "/[lang]/second-page": [
-      "home"
     ]
   }
 }
