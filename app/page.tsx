@@ -5,7 +5,7 @@ import Card from '@/components/elements/Card'
 export default function Home() {
   return (
     <div>
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center">
         <div>Hello World ⚛︎</div>
         <div>Don’t worry, we are bilingual here!</div>
       </div>
