@@ -9,8 +9,11 @@
     "*": [
       "common"
     ],
+    "/": [
+      "articles"
+    ],
     "/article/[lang]": [
-      "home"
+      "articles"
     ]
   }
 }
