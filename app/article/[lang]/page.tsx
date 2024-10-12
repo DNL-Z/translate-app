@@ -1,18 +1,12 @@
 'use client'
 
-import BackButton from '@/components/elements/BackButton'
-import useTranslation from 'next-translate/useTranslation'
+import Card from '@/components/layouts/Card'
 
-export default function Language() {
-  const { t } = useTranslation()
-
+export default function Article() {
   return (
-    <>
-      <div>
-        <div>{t('home:title')}</div>
-        <div>{t('home:description')}</div>
-        <BackButton />
-      </div>
-    </>
+    <div>
+      <Card article={'transistor'} link={false} />
+      <Card article={'toto'} link={false} />
+    </div>
   )
 }
