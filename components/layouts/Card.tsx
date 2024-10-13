@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
-import BackButton from '@/components/elements/BackButton'
+
 import transistorsImg from '/public/transistors.jpg'
 
 interface Props {
@@ -28,7 +28,9 @@ export default function Card(props: Props) {
               <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl">
                 {t(`articles:${article}.title`)}
               </h2>
-              <div className="text-sm font-light">{t(`articles:${article}.description`)}</div>
+              <div className="line-clamp-3 overflow-hidden text-ellipsis whitespace-normal text-sm font-light">
+                {t(`articles:${article}.description`)}
+              </div>
             </div>
           </Link>
         ) : (
@@ -47,7 +49,6 @@ export default function Card(props: Props) {
           </>
         )}
       </div>
-      <BackButton />
     </section>
   )
 }
