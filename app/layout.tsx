@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="size-full p-2">
+      <body className="size-full">
         <div>{children}</div>
       </body>
     </html>

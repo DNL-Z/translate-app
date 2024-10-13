@@ -9,12 +9,16 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar />
-      <section className="flex flex-col items-center pt-3">
-        <div>{t('common:hello')}</div>
-        <div>{t('common:bilingual')}</div>
-      </section>
       <section>
+        <Navbar />
+      </section>
+      <section className="flex animate-fadeIn flex-col items-center pt-3">
+        <div className="text-2xl">{t('common:hello')}</div>
+        <div className="text-lg">{t('common:bilingual')}</div>
+      </section>
+      <section className="grid grid-cols-3 gap-3">
+        <Card article={'transistor'} link={true} />
+        <Card article={'transistor'} link={true} />
         <Card article={'transistor'} link={true} />
       </section>
     </div>
