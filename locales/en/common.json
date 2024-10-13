@@ -1,5 +1,8 @@
 {
-  "title": "Example next-translate",
-  "powered": "Powered by DNL",
-  "alt": "Vercel logo"
+  "app-title": "Translate App",
+  "hello": "Hello World!",
+  "bilingual": "Don’t worry, we are bilingual here!",
+  "en": "English",
+  "fr": "French",
+  "ru": "Russian"
 }

@@ -1,19 +1,22 @@
 'use client'
 
-import Card from '@/components/elements/Card'
+import Navbar from '@/components/layouts/Navbar'
+import Card from '@/components/layouts/Card'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function Home() {
+  const { t } = useTranslation()
+
   return (
     <div>
-      <div className="flex flex-col items-center">
-        <div>Hello World ⚛︎</div>
-        <div>Don’t worry, we are bilingual here!</div>
-      </div>
-      <div>
-        <Card title="English" id="en"></Card>
-        <Card title="French" id="fr"></Card>
-        <Card title="Russian" id="ru"></Card>
-      </div>
+      <Navbar />
+      <section className="flex flex-col items-center pt-3">
+        <div>{t('common:hello')}</div>
+        <div>{t('common:bilingual')}</div>
+      </section>
+      <section>
+        <Card article={'transistor'} link={true} />
+      </section>
     </div>
   )
 }
